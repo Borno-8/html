@@ -1,0 +1,37 @@
+<html>
+ <head>
+    <style>
+        
+        .grid-ltem1 { grid-area: header;}
+        .grid-ltem2 { grid-area: menu;}
+        .grid-ltem3 { grid-area: main;}
+        .grid-ltem4 { grid-area: footer;}
+
+        .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+        grid-template-areas:
+        'header  header  header header header'
+        'menu main main main main'
+        'menu footer footer footer footer';
+        background-color: cornflowerblue;
+        padding: 10px;
+        }
+        .grid-container div {
+            background-color: rgb(0, 68, 255);
+            text-align: center;
+            padding: 20px;
+            border: 3px solid darkblue;
+        }
+    </style>
+ </head>  
+ <body>
+    
+    <div class="grid-container">
+        <div class="grid-item1">header</div>
+        <div class="grid-item2">menu</div>
+        <div class="grid-item3">main</div>
+        <div class="grid-item4">footer</div>
+    </div>
+ </body> 
+</html>
