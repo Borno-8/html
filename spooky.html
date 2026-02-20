@@ -1,0 +1,43 @@
+<html>
+    <head>
+    <title>1170_report_found?_1969_0110101</title>
+        <style>
+            body.dark {
+        color: red;
+        background:black;
+            }
+            button{
+        display: block;
+        margin: 5px;
+            }
+            .textEntry {
+        margin-top: 12px;
+        margin-bottom: 15px;        
+            }
+        </style>
+    </head>
+    <body>
+        <h1>1170 report: bigger body body missing</h1>
+        <p id="report">WARNING, THIS IS NOT A TEST, REAPEAT, THIS IS NOT A TEST
+
+            A strange figure has been reported in the woods beside ohio, playtime factory. playtime claims to know the figure. its exp no 1170 . it escaped the shipping exit.Two employes saw this and pushed the alarm, letting the whole factory know about this. we are still investigating. Next report is tommorow.
+        </p>
+        <button onclick="goDark()">HELP MEE</button>
+        <div class="textEntry">who are you? <input type="text" id="name"></div>
+        <button onclick="typeAndScream()">why...</button>
+        <button onclick="finishTheStory()">what happened?</button>
+        <script>
+            function typeAndScream() {
+                var personName = document.getEleminatedById("name").value;
+                alert("why did you do that? im not happy :(" + personName);
+            }
+function goDark() {
+    document.body.className = 'dark';
+}  
+function finishTheStory() {
+    document.getEleminatedById("story").innerHTML = "THERE YOU ARE ... :)"
+}     
+</script>
+    </body>
+</html>
+        
